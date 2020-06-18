@@ -13,10 +13,14 @@ if question1 == "Yes":
               "1/b = Inverse of Second number "]
     for rule in legend:
         print(rule)
+    trig_legend = ["\n Enter Sin for Sinθ", "Enter Cos for Cosθ", "Enter Tan for Tanθ", "Enter Cosec for Cosecθ",
+                   "Enter Sec for Secθ", "Enter Cot for Cotθ"]
+    for trig_rule in trig_legend:
+        print(trig_rule)
 else:
     print("Move On!")
 
-print("\nNOTE: Remember that you can use the second operator for all calcuations except DMAS, Mod and Greater")
+print("\nNOTE: Remember that you can use the second operator for all calcuations except DMAS, Mod and Greater. \n Also,use the correct case while typing in the calculator")
 
 question2 = print(input("\nDo you want to use the Regular calculator or the Trig calculator? \nRegular or Trig\n"))
 
@@ -102,7 +106,38 @@ if question2 == "Regular":
         print("\nINVALID ANSWER - Value Error")
 
 else:
-    print("Move on!")
+    print("\nStart your calculations, " + name)
+    opp = float(input("Enter Opposite:"))
+    adj = float(input("Enter Adjacent:"))
+    hyp = float(input("Enter Hypotenuse:"))
+    ratio = (input("Enter Trig ratio required:"))
+
+    try:
+        if ratio == "sin" or "Sin":
+            print("\nSinθ = ")
+            print(opp / hyp)
+        elif ratio == "cos" or "Cos":
+                print("\nCosθ = ")
+                print(adj / hyp)
+        elif ratio == "tan" or "Tan":
+                print("\nTanθ = ")
+                print(opp / adj)
+        elif ratio == "cosec" or "Cosec":
+                print("\nCosecθ = ")
+                print(hyp / opp)
+        elif ratio == "sec" or "Sec":
+            print("\nSecθ = ")
+            print(hyp / adj)
+        elif ratio == "Cot" or "cot":
+            print("\nCotθ = ")
+            print(adj / opp)
+        else:
+            print("\nInvalid Operation")
+    except ZeroDivisionError:
+        print("\nINVALID ANSWER - Divided by Zero")
+    except ValueError:
+        print("\nINVALID ANSWER - Value Error")
+
 
 print("\nThanks for using the calculator," + name)
 
