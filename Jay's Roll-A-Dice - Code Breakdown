@@ -1,0 +1,6 @@
+lines 1-2 = Title
+lines 3-3 = Import module
+lines 6-10 = Create Randomizer to roll dice
+lines 12-18 = Create function to include options
+lines 22-26 = Loop for choosing options
+lines 28-28 = End Menu Function
