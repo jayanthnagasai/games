@@ -4,7 +4,7 @@ print("Welcome to Jay's Python Calculator Version 3.0,  " + name)
 
 question1 = print(input("\nDo you want the legend for the calculator? \nYes or No\n"))
 
-if question1 == "Yes":
+if question1 == "Yes" or "yes" or "Y" or "y":
     legend = ["+ = Add", "- = Subtract", "+ = Multiply", "/ = Division", "Inverse = Inverse of Division", "% = Mod",
               "> = To see which number is greater", "a^2 = Square of First number",
               "b^2 = Square of Second number ", "a^3 = Cube of First number", "b^3 = Cube of Second number",
@@ -24,7 +24,7 @@ print("\nNOTE: Remember that you can use the second operator for all calcuations
 
 question2 = print(input("\nDo you want to use the Regular calculator or the Trig calculator? \nRegular or Trig\n"))
 
-if question2 == "Regular":
+if question2 == "Regular" or "regular":
     print("\nStart your calculations, " + name)
     num1 = float(input("Enter first number:"))
     operator = input("Enter operator:")
@@ -140,5 +140,3 @@ else:
 
 
 print("\nThanks for using the calculator," + name)
-
-
