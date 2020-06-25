@@ -1,5 +1,3 @@
-# Simple Pong in Python 3 for Beginners
-# By @TokyoEdTech
 
 from turtle import Turtle
 import turtle
@@ -43,7 +41,6 @@ pen5.write(name2, align="center", font=("Times New Roman", 50, "bold"))
 # Score
 score_a = 0
 score_b = 0
-score_c = 0
 
 # Paddle A
 paddle_a = turtle.Turtle()
@@ -62,15 +59,6 @@ paddle_b.color("blue")
 paddle_b.shapesize(float(player_width), float(player_height))
 paddle_b.penup()
 paddle_b.goto(350, 0)
-
-# Paddle C
-paddle_c = turtle.Turtle()
-paddle_c.speed(0)
-paddle_c.shape("square")
-paddle_c.color("black")
-paddle_c.shapesize(float(player_height), float(player_width))
-paddle_c.penup()
-paddle_c.goto(0, -290)
 
 print("Enter the following coordinates to detemine which player serves fist (x, y): "
       "\n a) Player A: (-300, 0), \n a) Player B: (300, 0)")
@@ -116,7 +104,6 @@ pen3.penup()
 pen3.hideturtle()
 pen3.goto(0, 360)
 pen3.write("Jay's Pong Game", align="center", font=("Times New Roman", 30, "bold"))
-
 
 # Functions
 def paddle_a_up():
@@ -204,7 +191,6 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
-
 # Main game loop
 while True:
     wn.update()
@@ -241,7 +227,6 @@ while True:
         ball.goto(0, 0)
         ball.dx *= -1
 
-
     # Paddle and ball collisions
     if ball.xcor() < -340 and ball.ycor() < paddle_a.ycor() + 50 and ball.ycor() > paddle_a.ycor() - 50:
         ball.dx *= -1
@@ -250,7 +235,6 @@ while True:
     elif ball.xcor() > 340 and ball.ycor() < paddle_b.ycor() + 50 and ball.ycor() > paddle_b.ycor() - 50:
         ball.dx *= -1
         os.system("afplay bounce.wav&")
-
 
     if score_a == 11:
         ball.goto(0, 0)
