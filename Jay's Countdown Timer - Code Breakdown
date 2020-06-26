@@ -1,0 +1,7 @@
+lines 1-2 = Import Modules
+lines 4-6 = Print Title
+lines 8-8 = Assign Colon Variable
+lines 10-17 = Give User to input time measurements
+lines 19-24 =Convert to integrals
+lines 26-51 = Assign loop for timer
+lines 52-54 = Complete Code and loop

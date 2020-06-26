@@ -1,0 +1,4 @@
+lines 1-2 = Ask user Mail ID
+lines 3-4 = Assign variables for username and domain name and differentiate between them
+lines 5-6 = Assign output variable for both username and domain name using .format
+lines 7-9 = Print Outputs
