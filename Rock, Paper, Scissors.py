@@ -4,6 +4,7 @@ from random import randint
 t = ["Rock", "Paper", "Scissors"]
 computer = t[randint(0, 2)]
 player = True
+play_again = True
 
 while player == True:
     player = input("Rock, Paper, Scissors?  :")
@@ -26,5 +27,6 @@ while player == True:
             print("You win!  " + player + "  cut  " + computer)
     else:
         print("It is not a valid play. Check your spelling")
+
 
 
