@@ -10,14 +10,19 @@ def BinarySearch (arr, l, r, x):
 
     return -1
 
-var1 = int(input("Enter first variable:  "))
-var2 = int(input("Enter second variable:  "))
-var3 = int(input("Enter third variable:  "))
-var4 = int(input("Enter fourth variable:  "))
-var5 = int(input("Enter fifth variable:  "))
-number_needed = int(input("Enter the element of the number you entered:  "))
+lst = []
 
-arr = [var1, var2, var3, var4, var5]
+n = int(input("Enter number of elements : "))
+
+
+# iterating till the range
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+
+number_needed = int(input("Enter element to know the index value : "))
+
+arr = lst
 x = number_needed
 
 result = BinarySearch(arr, 0, len(arr)-1, x)
