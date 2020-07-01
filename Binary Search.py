@@ -58,3 +58,18 @@ arr = lst
 n = len(arr)
 Ans = smallest(arr, n)
 print("Smallest Number in given array is", Ans)
+
+
+def Split(mix):
+    valid_numbers = []
+    invalid_numbers = []
+    for i in mix:
+        if (i == 310, 311, 312, 313, 314, 315, 316, 317, 318,319):
+            valid_numbers.append(i)
+        else:
+            invalid_numbers.append(i)
+    print("Valid Account Numbers:", valid_numbers)
+    print("Invalid Account Numbers:", invalid_numbers)
+
+mix = lst
+Split(mix)
