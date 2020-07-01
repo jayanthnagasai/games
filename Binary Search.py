@@ -32,3 +32,29 @@ else:
     print("Element is not presented in array")
 
 
+def largest(arr, n):
+    max = arr[0]
+
+    for i in range(1, n):
+        if arr[i] > max:
+            max = arr[i]
+    return max
+
+arr = lst
+n = len(arr)
+Ans = largest(arr, n)
+print("Largest Number in given array is", Ans)
+
+
+def smallest(arr, n):
+    max = arr[0]
+
+    for i in range(1, n):
+        if arr[i] < max:
+            max = arr[i]
+    return max
+
+arr = lst
+n = len(arr)
+Ans = smallest(arr, n)
+print("Smallest Number in given array is", Ans)
